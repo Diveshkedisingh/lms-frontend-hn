@@ -7,6 +7,7 @@ import './App.css';
 import Login from './Pages/Login';
 import CourseList from './Pages/Course/CourseList';
 import Contact from './Pages/Contact';
+import Denied from './Pages/Denied';
 
 
 
@@ -22,6 +23,8 @@ function App() {
            <Route path="/courses" element={<CourseList />}></Route>
 
            <Route path="/contact" element={<Contact />}></Route>
+
+           <Route path="/denied" element={<Denied />}></Route>
 
 
            <Route path="/signup" element={<Signup />}></Route>
