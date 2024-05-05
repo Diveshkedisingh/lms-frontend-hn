@@ -1,5 +1,5 @@
 
-import { useEffect } from "react";
+
 import { useLocation } from "react-router-dom";
 import HomeLayout from "../../Layouts/HomeLayout";
 import { useSelector } from "react-redux";
@@ -10,10 +10,7 @@ function CourseDescription() {
 
     const { role, data } = useSelector((state) => state.auth);
 
-    useEffect(() => {
-
-    },[])
-
+    
 
     return (
           <HomeLayout>
@@ -59,7 +56,7 @@ function CourseDescription() {
                     </div>
                     <div className="space-y-2 text-xl">
                        <h1 className="text-3xl font-bold text-yellow-500 mb-4 text-center">
-                           {state?.title}
+                           title
                        </h1>
 
                        <p className="text-yellow-500">Course description: </p>
