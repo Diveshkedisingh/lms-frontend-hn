@@ -38,7 +38,7 @@ function HomeLayout({children}) {
     }
     }
 
-    
+
     return (
         
         <div className="min-h-[90vh] bg-gray-900">
@@ -71,6 +71,13 @@ function HomeLayout({children}) {
 
                             <li>
                                 <Link to="/admin/dashboard">Admin DashBoard</Link>
+                            </li>
+                        )}
+
+                        {isLoggedIn && role == 'ADMIN' && (
+
+                            <li>
+                               <Link to="/course/create">Create new course</Link>
                             </li>
                         )}
 
